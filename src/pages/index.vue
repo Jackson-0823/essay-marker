@@ -7,6 +7,8 @@
                 </ion-toolbar>
             </div>
         </ion-header>
+
+        
         <ion-content>
             <div class="welcome-banner" ref="welcomeBanner">
                 <h1 style="text-align: center; margin: 10rem 0 10rem 0">Welcome to Essay Marker</h1>
@@ -15,7 +17,7 @@
                     <ion-icon :icon="ioniconsLogInOutline" />
                     <ion-label>Login</ion-label>
                 </ion-button>
-                <ion-button expand="block" shape="round" class="welcome-button">
+                <ion-button router-link="/register" expand="block" shape="round" class="welcome-button">
                     <ion-icon :icon="ioniconsPersonAddOutline" />
                     <ion-label>Register</ion-label>
                 </ion-button>

@@ -1,9 +1,17 @@
 <template>
     <ion-page>
       <ion-header>
-        <ion-toolbar>
-          <ion-title>Tab 1</ion-title>
-        </ion-toolbar>
+        <ul>
+            <li>
+            <ion-toolbar>
+            <ion-title>Search your name</ion-title>
+            </ion-toolbar> 
+            </li>
+            <li>
+            <ion-searchbar show-clear-button="always" :clear-icon="trashBin" value="Custom name"></ion-searchbar>
+            </li>
+        </ul>
+
       </ion-header>
       <ion-content>
         <ion-list>
@@ -35,3 +43,10 @@
       </ion-content>
     </ion-page>
   </template>
+
+<script lang="ts">
+  import { IonSearchbar } from '@ionic/vue';
+  import { defineComponent } from 'vue';
+  import { trashBin } from 'ionicons/icons';
+
+</script>

@@ -34,10 +34,12 @@
                         </template>
                     </n-list-item>
                 </n-list>
+
                 <n-form style="margin-top: 1em">
                     <n-form-item-row label="Title">
                         <n-input clearable v-model:value="newEssayStore.title" />
                     </n-form-item-row>
+                    
                     <n-form-item-row label="Content">
                         <n-space vertical style="width: 100%">
                             <n-input
@@ -123,6 +125,8 @@ function handleStudentClick() {
 </script>
 
 <style scoped>
+
+
 .icon-container {
     display: flex;
     flex-direction: row;
